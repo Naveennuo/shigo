@@ -1,6 +1,6 @@
 import MainHero from "@/imports/MainHero";
-import TopSightsToSeeSection from "@/imports/TopSightsToSeeSection";
-import WhyTriptoSection from "@/imports/WhyTriptoSection";
+//import TopSightsToSeeSection from "@/imports/TopSightsToSeeSection";
+//import WhyTriptoSection from "@/imports/WhyTriptoSection";
 
 export default function App() {
   return (
@@ -8,10 +8,10 @@ export default function App() {
       <div className="max-w-[1440px] w-full">
         <MainHero />
       </div>
-      <div className="flex flex-col gap-16 items-center py-16 w-full max-w-[1440px] px-4">
+      {/* <div className="flex flex-col gap-16 items-center py-16 w-full max-w-[1440px] px-4">
         <TopSightsToSeeSection />
         <WhyTriptoSection />
-      </div>
+      </div> */}
     </div>
   );
 }
