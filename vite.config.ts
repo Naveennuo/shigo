@@ -4,11 +4,8 @@ import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
+  base: './', // ✅ Important for relative paths on Vercel
   plugins: [react(), tailwindcss()],
-  resolve: {
-    alias: {
-      '@': path.resolve(__dirname, './src'),
-    },
-  },
-  base: './', // ✅ must have this for Vercel
+  resolve: { alias: { '@': path.resolve(__dirname, './src') } }
 })
+
