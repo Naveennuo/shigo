@@ -1,4 +1,9 @@
-@import 'tailwindcss' source(none);
-@source '../**/*.{js,ts,jsx,tsx}';
+/* 1. Tailwind base reset */
+@import "tailwindcss/preflight";
 
-@import 'tw-animate-css';
+/* 2. Your custom CSS files */
+@import "@/styles/theme.css";
+@import "@/styles/components.css";
+
+/* 3. Tailwind utilities */
+@tailwind utilities;
