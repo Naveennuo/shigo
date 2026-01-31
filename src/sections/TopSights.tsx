@@ -10,7 +10,7 @@ const TopSights: React.FC = () => {
   ];
 
   return (
-    <section style={{ width: "100%", padding: 40 }}>
+    <section style={{ width: "100%", padding: 40, boxSizing: "border-box" }}>
       <h2 style={{ fontSize: 32, fontWeight: 700, marginBottom: 24 }}>
         Top Sights to See
       </h2>
@@ -33,44 +33,79 @@ const TopSights: React.FC = () => {
               position: "relative",
             }}
           >
-            {/* Responsive stretched image */}
+            {/* Image */}
             <img
               src={s.img}
               alt={s.title}
               style={{
                 width: "100%",
                 height: "100%",
-                objectFit: "cover", // 🔥 stretch to container
-                display: "block",   // 🔥 remove bottom gap
+                objectFit: "cover",
+                display: "block",
+                transition: "transform 0.5s ease",
+                //filter: "brightness(0.75)",
               }}
+              className="top-sight-img"
             />
 
-            {/* Overlay */}
+            {/* Floating Title Overlay */}
             <div
-              style={{
-                position: "absolute",
-                inset: 0,
-                background:
-                  "linear-gradient(to top, rgba(0,0,0,0.55), transparent)",
-              }}
-            />
-
-            {/* Title */}
-            <span
               style={{
                 position: "absolute",
                 top: 20,
                 left: 20,
-                color: "#fff",
-                fontSize: 22,
-                fontWeight: 600,
+                background: "rgba(0,0,0,0.5)",
+                padding: "8px 16px",
+                borderRadius: 12,
+                backdropFilter: "blur(4px)",
+                boxShadow: "0 4px 12px rgba(0,0,0,0.4)",
               }}
             >
-              {s.title}
-            </span>
+              <span
+                style={{
+                  color: "#fff",
+                  fontSize: 22,
+                  fontWeight: 600,
+                  textShadow: "1px 1px 3px rgba(0,0,0,0.7)",
+                }}
+              >
+                {s.title}
+              </span>
+            </div>
           </div>
         ))}
       </div>
+
+      {/* Responsive + Hover styles */}
+      <style>
+        {`
+          /* Hover zoom */
+          div:hover > .top-sight-img {
+            transform: scale(1.06);
+          }
+
+          /* Tablet */
+          @media (max-width: 1024px) {
+            section div[style*="grid"] {
+              grid-template-columns: repeat(4, 1fr) !important;
+            }
+          }
+
+          /* Mobile */
+          @media (max-width: 640px) {
+            section {
+              padding: 20px !important;
+            }
+            section div[style*="grid"] {
+              grid-template-columns: repeat(1, 1fr) !important;
+            }
+            section div[style*="grid"] > div {
+              grid-column: span 1 !important;
+              height: 220px !important;
+            }
+          }
+        `}
+      </style>
     </section>
   );
 };
