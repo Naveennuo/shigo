@@ -32,8 +32,8 @@ const TopSights: React.FC = () => {
               overflow: "hidden",
               position: "relative",
             }}
+            className="top-sight-card"
           >
-            {/* Image */}
             <img
               src={s.img}
               alt={s.title}
@@ -43,12 +43,10 @@ const TopSights: React.FC = () => {
                 objectFit: "cover",
                 display: "block",
                 transition: "transform 0.5s ease",
-                //filter: "brightness(0.75)",
               }}
               className="top-sight-img"
             />
 
-            {/* Floating Title Overlay */}
             <div
               style={{
                 position: "absolute",
@@ -76,11 +74,10 @@ const TopSights: React.FC = () => {
         ))}
       </div>
 
-      {/* Responsive + Hover styles */}
       <style>
         {`
           /* Hover zoom */
-          div:hover > .top-sight-img {
+          .top-sight-card:hover > .top-sight-img {
             transform: scale(1.06);
           }
 
@@ -96,12 +93,19 @@ const TopSights: React.FC = () => {
             section {
               padding: 20px !important;
             }
+
             section div[style*="grid"] {
               grid-template-columns: repeat(1, 1fr) !important;
             }
-            section div[style*="grid"] > div {
+
+            /* Make card height auto so taller images hug content */
+            .top-sight-card {
               grid-column: span 1 !important;
-              height: 220px !important;
+              height: auto !important;
+            }
+
+            .top-sight-card img {
+              height: auto !important;
             }
           }
         `}
