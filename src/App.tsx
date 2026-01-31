@@ -1,6 +1,7 @@
 import React from "react";
 import MainHero from "./sections/MainHero";
 import TopSights from "./sections/TopSights";
+import WhyShiGO from "./sections/WhyShiGO";
 
 export default function App() {
   return (
@@ -8,6 +9,7 @@ export default function App() {
       <div className="w-full">
         <MainHero />
         <TopSights />
+        <WhyShiGO />
       </div>
     </div>
   );
