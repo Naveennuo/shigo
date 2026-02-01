@@ -2,6 +2,7 @@ import React from "react";
 import MainHero from "./sections/MainHero";
 import TopSights from "./sections/TopSights";
 import WhyShiGO from "./sections/WhyShiGO";
+import DealsWeekend from "./sections/DealsWeekend";
 
 export default function App() {
   return (
@@ -10,6 +11,7 @@ export default function App() {
         <MainHero />
         <TopSights />
         <WhyShiGO />
+        <DealsWeekend />
       </div>
     </div>
   );
