@@ -2,11 +2,13 @@ import React from "react";
 
 const TopSights: React.FC = () => {
   const sights = [
-    { title: "Kerala", img: new URL("../assets/TopShights1.png", import.meta.url).href, span: 3 },
-    { title: "Jammu and Kashmir", img: new URL("../assets/TopShights2.png", import.meta.url).href, span: 3 },
-    { title: "Goa", img: new URL("../assets/TopShights3.png", import.meta.url).href, span: 2 },
-    { title: "Bombay", img: new URL("../assets/TopShights4.png", import.meta.url).href, span: 2 },
-    { title: "Bengal", img: new URL("../assets/TopShights5.png", import.meta.url).href, span: 2 },
+    { title: "Tamilnadu", img: new URL("../assets/Tamilnadu.jpg", import.meta.url).href, span: 3 },
+    { title: "Kerala", img: new URL("../assets/Kerala.jpg", import.meta.url).href, span: 3 },
+    { title: "Karnataka", img: new URL("../assets/Karnataka.jpg", import.meta.url).href, span: 2 },
+    { title: "Andhra Pradesh", img: new URL("../assets/Andhra Pradesh.jpg", import.meta.url).href, span: 2 },
+    { title: "Pondicherry", img: new URL("../assets/Pondicherry.jpg", import.meta.url).href, span: 2 },
+    { title: "Goa", img: new URL("../assets/Goa.jpg", import.meta.url).href, span: 3 },
+    { title: "Telangana", img: new URL("../assets/Telangana.jpg", import.meta.url).href, span: 3 },
   ];
 
   return (

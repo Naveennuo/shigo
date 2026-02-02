@@ -1,41 +1,44 @@
-const keralaImg = new URL("../assets/TopShights1.png", import.meta.url).href;
+const HillsStation = new URL("../assets/Hills Station.jpg", import.meta.url).href;
+const TempleTour = new URL("../assets/Temple Tour.jpg", import.meta.url).href;
+const HoneymoonTrip = new URL("../assets/Honeymoon Trip.jpg", import.meta.url).href;
+const CityTour = new URL("../assets/City Tour.jpg", import.meta.url).href;
 
 const deals = [
   {
     id: 1,
-    title: "Kerala Tour",
+    title: "Hills Station",
     location: "India",
-    rating: "4.0",
-    label: "Very Good",
-    reviews: "160 reviews",
-    image: keralaImg,
+    //rating: "4.0",
+    //label: "Very Good",
+    //reviews: "160 reviews",
+    image: HillsStation,
   },
   {
     id: 2,
-    title: "Kerala Tour",
+    title: "Temple Tour",
     location: "India",
-    rating: "4.0",
-    label: "Very Good",
-    reviews: "160 reviews",
-    image: keralaImg,
+    //rating: "4.0",
+    //label: "Very Good",
+    //reviews: "160 reviews",
+    image: TempleTour,
   },
   {
     id: 3,
     title: "Kerala Tour",
     location: "India",
-    rating: "4.0",
-    label: "Very Good",
-    reviews: "160 reviews",
-    image: keralaImg,
+    //rating: "4.0",
+    //label: "Very Good",
+    //reviews: "160 reviews",
+    image: HoneymoonTrip,
   },
   {
     id: 4,
     title: "Kerala Tour",
     location: "India",
-    rating: "4.0",
-    label: "Very Good",
-    reviews: "160 reviews",
-    image: keralaImg,
+    //rating: "4.0",
+    //label: "Very Good",
+    //reviews: "160 reviews",
+    image: CityTour,
   },
 ];
 
@@ -67,11 +70,11 @@ const DealsWeekend = () => {
                 className="h-[200px] w-full object-cover rounded-t-xl"
               />
 
-              <div className="p-4">
+               <div className="p-4">
                 <p className="text-sm font-semibold text-blue-600 flex items-center gap-1">
-                  {item.rating}
+                  
                   <span className="text-gray-500 font-normal">
-                    {item.label} {item.reviews}
+            
                   </span>
                 </p>
 
