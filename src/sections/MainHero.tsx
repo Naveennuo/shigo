@@ -47,12 +47,12 @@ const MainHero: React.FC = () => {
 
       {/* Header */}
       <header className="absolute top-0 left-0 w-full z-40">
-        <div className="flex items-center justify-between h-16 sm:h-20 md:h-24 px-4 sm:px-6 md:px-10 bg-white/80 backdrop-blur-sm">
+        <div className="flex items-center justify-between h-16 sm:h-20 md:h-24 px-4 sm:px-6 md:px-10 bg-[#000721]/70 backdrop-blur-sm">
           {/* Logo */}
           <img src={shigoLogo} alt="ShiGO Logo" className="h-10 sm:h-12 md:h-14" />
 
           {/* Desktop Nav */}
-          <nav className="hidden md:flex gap-8 text-[#383e48] text-[16px] font-medium">
+          <nav className="hidden md:flex gap-8 text-[#ffff] text-[16px] font-medium">
             {navItems.map((item) => (
               <span
                 key={item}

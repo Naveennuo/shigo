@@ -3,6 +3,7 @@ import MainHero from "./sections/MainHero";
 import TopSights from "./sections/TopSights";
 import WhyShiGO from "./sections/WhyShiGO";
 import DealsWeekend from "./sections/DealsWeekend";
+import Cars from "./sections/Cars";
 
 export default function App() {
   return (
@@ -12,6 +13,7 @@ export default function App() {
         <TopSights />
         <WhyShiGO />
         <DealsWeekend />
+        <Cars />
       </div>
     </div>
   );
