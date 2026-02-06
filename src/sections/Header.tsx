@@ -38,32 +38,42 @@ export default function Header() {
         </div>
 
         {/* Mobile Toggle */}
-        <button onClick={() => setOpen(!open)} className="md:hidden text-white">
-          {open ? <X /> : <Menu />}
+        <button onClick={() => setOpen(true)} className="md:hidden text-white">
+          <Menu />
         </button>
       </div>
 
       {/* Mobile Menu */}
       <div
-        className={`md:hidden fixed top-0 right-0 h-full w-[80%] bg-white p-6 transition ${
+        className={`md:hidden fixed top-0 right-0 h-full w-[80%] bg-[#000721] text-white p-6 transition-transform duration-300 z-50 ${
           open ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        {nav.map((n) => (
-          <p
-            key={n}
-            className="py-3 text-lg cursor-pointer"
-            onClick={() => setOpen(false)}
-          >
-            {n}
-          </p>
-        ))}
+        {/* Close Icon */}
+        <button
+          onClick={() => setOpen(false)}
+          className="absolute top-4 right-4 text-white"
+        >
+          <X size={28} />
+        </button>
+
+        <div className="mt-12">
+          {nav.map((n) => (
+            <p
+              key={n}
+              className="py-4 text-lg cursor-pointer hover:text-[#0092fb]"
+              onClick={() => setOpen(false)}
+            >
+              {n}
+            </p>
+          ))}
+        </div>
       </div>
 
       {/* Backdrop */}
       {open && (
         <div
-          className="fixed inset-0 bg-black/40 md:hidden"
+          className="fixed inset-0 bg-black/40 md:hidden z-40"
           onClick={() => setOpen(false)}
         />
       )}
