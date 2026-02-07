@@ -5,7 +5,7 @@ import { Phone, Mail, Menu, X } from "lucide-react";
 const logo = new URL("../assets/ShiGOlogo.svg", import.meta.url).href;
 const whatsappLogo = new URL("../assets/whatsapp.svg", import.meta.url).href;
 
-const nav = ["India", "International", "Luxury", "Car Rental", "Contact"];
+const nav = ["Destinations", "Our Advantages", "Bank Details", "Vechile Tariff", "Terms & Conditions"];
 
 export default function HeaderWithWhatsApp() {
   const [open, setOpen] = useState(false);
