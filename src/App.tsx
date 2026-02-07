@@ -6,6 +6,7 @@ import WhyShiGO from "./sections/WhyShiGO";
 import DealsWeekend from "./sections/ExplorePackages";
 import HotelBooking  from "./sections/HotelBooking";
 import Cars from "./sections/Cars";
+import TicketBooking from "./sections/TicketBooking";
 import RatingReviews from "./sections/RatingReviews";
 import Footer from "./sections/Footer";
 
@@ -20,6 +21,7 @@ export default function App() {
         <DealsWeekend />
         <HotelBooking />
         <Cars />
+        <TicketBooking />
         <RatingReviews />
         <Footer />
       </div>
