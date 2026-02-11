@@ -19,7 +19,7 @@ const PykaraWaterfall = new URL(
 ).href;
 
 const TeaGardens = new URL(
-  "../../../assets/tamilnadu/nilgiris/tea-gardens.jpg",
+  "../../../assets/tamilnadu/nilgiris/tea-gardens.png",
   import.meta.url
 ).href;
 
