@@ -1,8 +1,11 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const TopSights: React.FC = () => {
+  const navigate = useNavigate();
+
   const sights = [
-    { title: "Tamilnadu", img: new URL("../assets/Tamilnadu.jpg", import.meta.url).href, span: 3 },
+    { title: "Tamil Nadu", img: new URL("../assets/Tamilnadu.jpg", import.meta.url).href, span: 3 },
     { title: "Kerala", img: new URL("../assets/Kerala.jpg", import.meta.url).href, span: 3 },
     { title: "Karnataka", img: new URL("../assets/Karnataka.jpg", import.meta.url).href, span: 2 },
     { title: "Andhra Pradesh", img: new URL("../assets/Andhra Pradesh.jpg", import.meta.url).href, span: 2 },
@@ -33,8 +36,14 @@ const TopSights: React.FC = () => {
               borderRadius: 18,
               overflow: "hidden",
               position: "relative",
+              cursor: s.title === "Tamil Nadu" ? "pointer" : "default",
             }}
             className="top-sight-card"
+            onClick={() => {
+              if (s.title === "Tamil Nadu") {
+                navigate("/tamilnadu");
+              }
+            }}
           >
             <img
               src={s.img}
@@ -78,19 +87,16 @@ const TopSights: React.FC = () => {
 
       <style>
         {`
-          /* Hover zoom */
           .top-sight-card:hover > .top-sight-img {
             transform: scale(1.06);
           }
 
-          /* Tablet */
           @media (max-width: 1024px) {
             section div[style*="grid"] {
               grid-template-columns: repeat(4, 1fr) !important;
             }
           }
 
-          /* Mobile */
           @media (max-width: 640px) {
             section {
               padding: 20px !important;
@@ -100,7 +106,6 @@ const TopSights: React.FC = () => {
               grid-template-columns: repeat(1, 1fr) !important;
             }
 
-            /* Make card height auto so taller images hug content */
             .top-sight-card {
               grid-column: span 1 !important;
               height: auto !important;

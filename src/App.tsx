@@ -1,30 +1,63 @@
-import React from "react";
+/* ===========================
+   ✅ App.tsx (FULL)
+   =========================== */
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import Header from "./sections/Header";
+import Footer from "./sections/Footer";
+
 import MainHero from "./sections/MainHero";
 import TopSights from "./sections/TopSights";
 import WhyShiGO from "./sections/WhyShiGO";
 import DealsWeekend from "./sections/ExplorePackages";
-import HotelBooking  from "./sections/HotelBooking";
+import HotelBooking from "./sections/HotelBooking";
 import Cars from "./sections/Cars";
 import TicketBooking from "./sections/TicketBooking";
 import RatingReviews from "./sections/RatingReviews";
-import Footer from "./sections/Footer";
+
+/* Tamil Nadu Pages */
+import TamilNadu from "./sections/TopSights/TamilNadu/TamilNadu";
+import DistrictPage from "./sections/TopSights/TamilNadu/DistrictPage";
+import Nilgiris from "./sections/TopSights/TamilNadu/Nilgiris";
+
+/* ---------- Home Page Layout ---------- */
+const Home = () => {
+  return (
+    <>
+      <MainHero />
+      <TopSights />
+      <WhyShiGO />
+      <DealsWeekend />
+      <HotelBooking />
+      <Cars />
+      <TicketBooking />
+      <RatingReviews />
+    </>
+  );
+};
 
 export default function App() {
   return (
-    <div className="flex flex-col items-center w-full min-h-screen bg-white">
-      <div className="w-full">
+    <BrowserRouter>
+      <div className="flex flex-col min-h-screen bg-white">
         <Header />
-        <MainHero />
-        <TopSights />
-        <WhyShiGO />
-        <DealsWeekend />
-        <HotelBooking />
-        <Cars />
-        <TicketBooking />
-        <RatingReviews />
+
+        <Routes>
+          {/* Home */}
+          <Route path="/" element={<Home />} />
+
+          {/* Tamil Nadu Main */}
+          <Route path="/tamilnadu" element={<TamilNadu />} />
+
+          {/* ✅ Nilgiris dedicated page */}
+          <Route path="/tamilnadu/nilgiris" element={<Nilgiris />} />
+
+          {/* ✅ Other districts dynamic page */}
+          <Route path="/tamilnadu/:districtSlug" element={<DistrictPage />} />
+        </Routes>
+
         <Footer />
       </div>
-    </div>
+    </BrowserRouter>
   );
 }
