@@ -23,7 +23,14 @@ export default function HeaderWithWhatsApp() {
       <header className="absolute top-0 left-0 w-full z-40">
         {/* Main bar */}
         <div className="flex items-center justify-between h-16 md:h-20 px-4 md:px-10 bg-[#000721]/100 backdrop-blur">
-          <img src={logo} alt="ShiGO" className="h-9 md:h-10" />
+          <Link to="/" className="flex items-center">
+  <img
+    src={logo}
+    alt="ShiGO"
+    className="h-9 md:h-10 cursor-pointer"
+  />
+</Link>
+
 
           {/* Desktop Nav */}
           <nav className="hidden md:flex gap-6 text-white text-sm font-medium">

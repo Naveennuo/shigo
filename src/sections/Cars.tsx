@@ -3,18 +3,18 @@ import React from "react";
 /* ---------------- Images ---------------- */
 const imgs = {
   Glanza: new URL("../assets/toyota-glanza.png", import.meta.url).href,
-  Swift: new URL("../assets/maruti-swift.jpg", import.meta.url).href,
-  Etios: new URL("../assets/etios.jpg", import.meta.url).href,
+  Swift: new URL("../assets/maruti-swift.jpeg", import.meta.url).href,
+  Etios: new URL("../assets/etios.png", import.meta.url).href,
   Ertiga: new URL("../assets/ertiga.jpg", import.meta.url).href,
   Carens: new URL("../assets/kia-carens.jpg", import.meta.url).href,
   Rumion: new URL("../assets/toyota-rumion.jpg", import.meta.url).href,
   Innova: new URL("../assets/innova.jpg", import.meta.url).href,
   Crysta: new URL("../assets/crysta.jpg", import.meta.url).href,
   Hycross: new URL("../assets/toyota-hycross.png", import.meta.url).href,
-  Tempo14: new URL("../assets/tempo-14.jpg", import.meta.url).href,
+  Tempo14: new URL("../assets/tempo-14.png", import.meta.url).href,
   Tempo18: new URL("../assets/tempo-18.jpg", import.meta.url).href,
   Urbania12: new URL("../assets/urbania.jpg", import.meta.url).href,
-  Urbania16: new URL("../assets/urbania.jpg", import.meta.url).href,
+  Urbania16: new URL("../assets/urbania16.jpg", import.meta.url).href,
   Coach: new URL("../assets/coach-21.png", import.meta.url).href,
   Bus: new URL("../assets/bus-32.jpg", import.meta.url).href,
 };
