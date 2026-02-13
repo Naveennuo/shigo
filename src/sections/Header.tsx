@@ -108,21 +108,34 @@ export default function HeaderWithWhatsApp() {
         )}
       </header>
 
-      {/* ================= FLOATING WHATSAPP ================= */}
-      <a
-        href="https://wa.me/919525525552"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="fixed bottom-5 right-5 z-[999]
-                 hover:scale-105 active:scale-95 transition"
-        aria-label="WhatsApp"
-      >
-        <img
-          src={whatsappLogo}
-          alt="WhatsApp"
-          className="w-12 h-12 drop-shadow-lg"
-        />
-      </a>
+      {/* ================= FLOATING CALL (LEFT) ================= */}
+<a
+  href="tel:+919525525552"
+  className="fixed bottom-5 left-5 z-[999]
+             hover:scale-105 active:scale-95 transition"
+  aria-label="Call"
+>
+  <div className="w-12 h-12 bg-[#0092fb] rounded-full flex items-center justify-center shadow-lg">
+    <Phone size={22} className="text-white" />
+  </div>
+</a>
+
+{/* ================= FLOATING WHATSAPP (RIGHT) ================= */}
+<a
+  href="https://wa.me/919525525552"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="fixed bottom-5 right-5 z-[999]
+             hover:scale-105 active:scale-95 transition"
+  aria-label="WhatsApp"
+>
+  <img
+    src={whatsappLogo}
+    alt="WhatsApp"
+    className="w-12 h-12 drop-shadow-lg"
+  />
+</a>
+
     </>
   );
 }
