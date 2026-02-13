@@ -110,12 +110,12 @@ export default function HeaderWithWhatsApp() {
         </div>
 
         {/* Mobile top contact row */}
-        <div className="md:hidden flex justify-center align-center items-center gap-4 bg-white/90 backdrop-blur py-2">
-          <a href={TEL} className="flex items-center gap-2 text-[14px] sm:text-xs font-semibold text-[#003a64]">
+        <div className="md:hidden flex flex-wrap justify-center items-center gap-4 bg-white/90 backdrop-blur py-2 px-3">
+          <a href={TEL} className="flex items-center gap-2 text-[13px] sm:text-xs font-semibold text-[#003a64]">
             <Phone size={14} className="text-[#0092fb]" />
             +91 95255 25552
           </a>
-          <a href={EMAIL} className="flex items-center gap-2 text-[14px] sm:text-xs font-semibold text-[#003a64]">
+          <a href={EMAIL} className="flex items-center gap-2 text-[13px] sm:text-xs font-semibold text-[#003a64]">
             <Mail size={14} className="text-[#0092fb]" />
             {MAIL}
           </a>
