@@ -148,7 +148,7 @@ export default function HeaderWithWhatsApp() {
         type="button"
         onClick={openPlan}
         className="fixed right-0 top-1/2 -translate-y-1/2 z-[998]
-                   bg-[#0065ad] text-white font-semibold shadow-lg mx-10
+                   bg-[#0065ad] text-white font-semibold shadow-lg mx-5
                    px-4 py-3 rounded-2xl
                    hover:brightness-110 active:scale-[0.98] transition"
         aria-label="Plan Your Trip"
