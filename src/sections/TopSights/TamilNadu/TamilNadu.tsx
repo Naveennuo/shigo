@@ -13,6 +13,7 @@ const Nilgiris = new URL("../../../assets/tamilnadu/district/nilgiris.jpg", impo
 const Kanchipuram = new URL("../../../assets/tamilnadu/district/kanchipuram.jpg", import.meta.url).href;
 const Coimbatore = new URL("../../../assets/tamilnadu/district/coimbatore.jpg", import.meta.url).href;
 const Chennai = new URL("../../../assets/tamilnadu/district/chennai.jpg", import.meta.url).href;
+const Mahabalipuram = new URL("../../../assets/tamilnadu/district/mahabalipuram.jpg", import.meta.url).href;
 const Thanjavur = new URL("../../../assets/tamilnadu/district/thanjavur.jpg", import.meta.url).href;
 const Kodaikanal = new URL("../../../assets/tamilnadu/district/kodaikanal.jpg", import.meta.url).href;
 const Trichy = new URL("../../../assets/tamilnadu/district/trichy.jpg", import.meta.url).href;
@@ -25,6 +26,7 @@ const Salem = new URL("../../../assets/tamilnadu/district/salem.jpg", import.met
 const Madurai = new URL("../../../assets/tamilnadu/district/madurai.jpg", import.meta.url).href;
 const Rameshwaram = new URL("../../../assets/tamilnadu/district/rameshwaram.jpg", import.meta.url).href;
 const Vellore = new URL("../../../assets/tamilnadu/district/vellore.jpg", import.meta.url).href;
+const Tuticorin = new URL("../../../assets/tamilnadu/district/tuticorin.jpg", import.meta.url).href;
 
 /* ================== DATA (WITH SLUG) ================== */
 const districts = [
@@ -32,6 +34,7 @@ const districts = [
   { name: "Kanchipuram", slug: "kanchipuram", img: Kanchipuram },
   { name: "Coimbatore", slug: "coimbatore", img: Coimbatore },
   { name: "Chennai", slug: "chennai", img: Chennai },
+  { name: "Mahabalipuram", slug: "mahabalipuram", img: Mahabalipuram },
   { name: "Thanjavur", slug: "thanjavur", img: Thanjavur },
   { name: "Kodaikanal", slug: "kodaikanal", img: Kodaikanal },
   { name: "Trichy", slug: "trichy", img: Trichy },
@@ -44,6 +47,7 @@ const districts = [
   { name: "Madurai", slug: "madurai", img: Madurai },
   { name: "Rameshwaram", slug: "rameshwaram", img: Rameshwaram },
   { name: "Vellore", slug: "vellore", img: Vellore },
+  { name: "Tuticorin", slug: "tuticorin", img: Tuticorin },
 ];
 
 export default function TamilNadu() {
