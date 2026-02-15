@@ -3,7 +3,7 @@ import React from "react";
 /* images (add manually) */
 const img = {
   tour: new URL("../assets/Tour Packages.jpg", import.meta.url).href,
-  hills: new URL("../assets/Hills Station.jpg", import.meta.url).href,
+  hills: new URL("../assets/Hills Station.webp", import.meta.url).href,
   honeymoon: new URL("../assets/Honeymoon Trip.jpg", import.meta.url).href,
   temple: new URL("../assets/Temple Tour.jpg", import.meta.url).href,
   taxi: new URL("../assets/Local Taxi Services.png", import.meta.url).href,

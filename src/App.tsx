@@ -19,6 +19,7 @@ import RatingReviews from "./sections/RatingReviews";
 import TamilNadu from "./sections/TopSights/TamilNadu/TamilNadu";
 import DistrictPage from "./sections/TopSights/TamilNadu/DistrictPage";
 import Nilgiris from "./sections/TopSights/TamilNadu/Nilgiris";
+import Kanchipuram from "./sections/TopSights/TamilNadu/Kanchipuram";
 
 /* ---------- Home Page Layout ---------- */
 const Home = () => {
@@ -51,6 +52,7 @@ export default function App() {
 
           {/* ✅ Nilgiris dedicated page */}
           <Route path="/tamilnadu/nilgiris" element={<Nilgiris />} />
+          <Route path="/tamilnadu/kanchipuram" element={<Kanchipuram />} />
 
           {/* ✅ Other districts dynamic page */}
           <Route path="/tamilnadu/:districtSlug" element={<DistrictPage />} />

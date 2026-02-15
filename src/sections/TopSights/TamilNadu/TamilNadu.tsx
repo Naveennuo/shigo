@@ -9,22 +9,22 @@ import { Link } from "react-router-dom";
 const Banner = new URL("../../../assets/Tamilnadu.jpg", import.meta.url).href;
 
 /* ================== DISTRICT IMAGES ================== */
-const Nilgiris = new URL("../../../assets/tamilnadu/nilgiris.jpg", import.meta.url).href;
-const Kanchipuram = new URL("../../../assets/tamilnadu/kanchipuram.jpg", import.meta.url).href;
-const Coimbatore = new URL("../../../assets/tamilnadu/coimbatore.jpg", import.meta.url).href;
-const Chennai = new URL("../../../assets/tamilnadu/chennai.jpg", import.meta.url).href;
-const Thanjavur = new URL("../../../assets/tamilnadu/thanjavur.jpg", import.meta.url).href;
-const Dindigul = new URL("../../../assets/tamilnadu/dindigul.jpg", import.meta.url).href;
-const Trichy = new URL("../../../assets/tamilnadu/trichy.jpg", import.meta.url).href;
-const Thiruvannamalai = new URL("../../../assets/tamilnadu/thiruvannamalai.jpg", import.meta.url).href;
-const Tenkasi = new URL("../../../assets/tamilnadu/tenkasi.jpg", import.meta.url).href;
-const Theni = new URL("../../../assets/tamilnadu/theni.jpg", import.meta.url).href;
-const Kanyakumari = new URL("../../../assets/tamilnadu/kanyakumari.jpg", import.meta.url).href;
-const Namakkal = new URL("../../../assets/tamilnadu/namakkal.jpg", import.meta.url).href;
-const Salem = new URL("../../../assets/tamilnadu/salem.jpg", import.meta.url).href;
-const Madurai = new URL("../../../assets/tamilnadu/madurai.jpg", import.meta.url).href;
-const Ramanathapuram = new URL("../../../assets/tamilnadu/ramanathapuram.jpg", import.meta.url).href;
-const Vellore = new URL("../../../assets/tamilnadu/vellore.jpg", import.meta.url).href;
+const Nilgiris = new URL("../../../assets/tamilnadu/district/nilgiris.jpg", import.meta.url).href;
+const Kanchipuram = new URL("../../../assets/tamilnadu/district/kanchipuram.jpg", import.meta.url).href;
+const Coimbatore = new URL("../../../assets/tamilnadu/district/coimbatore.jpg", import.meta.url).href;
+const Chennai = new URL("../../../assets/tamilnadu/district/chennai.jpg", import.meta.url).href;
+const Thanjavur = new URL("../../../assets/tamilnadu/district/thanjavur.jpg", import.meta.url).href;
+const Kodaikanal = new URL("../../../assets/tamilnadu/district/kodaikanal.jpg", import.meta.url).href;
+const Trichy = new URL("../../../assets/tamilnadu/district/trichy.jpg", import.meta.url).href;
+const Thiruvannamalai = new URL("../../../assets/tamilnadu/district/thiruvannamalai.jpg", import.meta.url).href;
+const Tenkasi = new URL("../../../assets/tamilnadu/district/tenkasi.jpg", import.meta.url).href;
+const Theni = new URL("../../../assets/tamilnadu/district/theni.jpg", import.meta.url).href;
+const Kanyakumari = new URL("../../../assets/tamilnadu/district/kanyakumari.jpg", import.meta.url).href;
+const Namakkal = new URL("../../../assets/tamilnadu/district/namakkal.jpg", import.meta.url).href;
+const Salem = new URL("../../../assets/tamilnadu/district/salem.jpg", import.meta.url).href;
+const Madurai = new URL("../../../assets/tamilnadu/district/madurai.jpg", import.meta.url).href;
+const Rameshwaram = new URL("../../../assets/tamilnadu/district/rameshwaram.jpg", import.meta.url).href;
+const Vellore = new URL("../../../assets/tamilnadu/district/vellore.jpg", import.meta.url).href;
 
 /* ================== DATA (WITH SLUG) ================== */
 const districts = [
@@ -33,7 +33,7 @@ const districts = [
   { name: "Coimbatore", slug: "coimbatore", img: Coimbatore },
   { name: "Chennai", slug: "chennai", img: Chennai },
   { name: "Thanjavur", slug: "thanjavur", img: Thanjavur },
-  { name: "Dindigul", slug: "dindigul", img: Dindigul },
+  { name: "Kodaikanal", slug: "kodaikanal", img: Kodaikanal },
   { name: "Trichy", slug: "trichy", img: Trichy },
   { name: "Thiruvannamalai", slug: "thiruvannamalai", img: Thiruvannamalai },
   { name: "Tenkasi", slug: "tenkasi", img: Tenkasi },
@@ -42,7 +42,7 @@ const districts = [
   { name: "Namakkal", slug: "namakkal", img: Namakkal },
   { name: "Salem", slug: "salem", img: Salem },
   { name: "Madurai", slug: "madurai", img: Madurai },
-  { name: "Ramanathapuram", slug: "ramanathapuram", img: Ramanathapuram },
+  { name: "Rameshwaram", slug: "rameshwaram", img: Rameshwaram },
   { name: "Vellore", slug: "vellore", img: Vellore },
 ];
 
