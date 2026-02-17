@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 /* ================== BANNER ================== */
 const NilgirisBanner = new URL(
-  "../../../assets/tamilnadu/nilgiris.jpg",
+  "../../../assets/tamilnadu/district/nilgiris.jpg",
   import.meta.url
 ).href;
 
