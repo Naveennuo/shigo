@@ -6,6 +6,7 @@ const Star3 = new URL("../assets/3 Star Hotel.jpg", import.meta.url).href;
 const Star4 = new URL("../assets/4 Star Hotel.jpg", import.meta.url).href;
 const Star5 = new URL("../assets/5 Star Hotel.jpg", import.meta.url).href;
 const Houseboat = new URL("../assets/Allappy Boat House.jpeg", import.meta.url).href;
+const PoovarBackwaters = new URL("../assets/Poovar Backwaters.jpg", import.meta.url).href;
 
 const items = [
   { id: 1, title: "Budget Friendly Hotel", image: Budget },
@@ -13,6 +14,7 @@ const items = [
   { id: 3, title: "4 Star Hotel", image: Star4 },
   { id: 4, title: "5 Star Hotel", image: Star5 },
   { id: 5, title: "Allappy Boat House", image: Houseboat },
+  { id: 6, title: "Poovar Backwaters", image: PoovarBackwaters },
 ];
 
 export default function HotelBookingCards() {

@@ -8,6 +8,7 @@ const img = {
   temple: new URL("../assets/Temple Tour.jpg", import.meta.url).href,
   taxi: new URL("../assets/Local Taxi Services.png", import.meta.url).href,
   driver: new URL("../assets/Acting Drivers.png", import.meta.url).href,
+  backwaters: new URL("../assets/Poovar Backwaters.jpg", import.meta.url).href,
 };
 
 const deals = [

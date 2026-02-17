@@ -11,11 +11,11 @@ const imgs = {
   Innova: new URL("../assets/vehicles/innova.jpg", import.meta.url).href,
   Crysta: new URL("../assets/vehicles/crysta.jpg", import.meta.url).href,
   Hycross: new URL("../assets/vehicles/toyota-hycross.png", import.meta.url).href,
-  Tempo14: new URL("../assets/vehicles/tempo-14.png", import.meta.url).href,
+  Tempo14: new URL("../assets/vehicles/tempo-14.webp", import.meta.url).href,
   Tempo18: new URL("../assets/vehicles/tempo-18.jpg", import.meta.url).href,
-  Urbania12: new URL("../assets/vehicles/urbania.jpg", import.meta.url).href,
-  Urbania16: new URL("../assets/vehicles/urbania16.jpg", import.meta.url).href,
-  Coach: new URL("../assets/vehicles/coach-21.png", import.meta.url).href,
+  Urbania12: new URL("../assets/vehicles/urbania-12.jpg", import.meta.url).href,
+  Urbania16: new URL("../assets/vehicles/urbania-16.jpg", import.meta.url).href,
+  Coach: new URL("../assets/vehicles/mini-bus.png", import.meta.url).href,
   Bus: new URL("../assets/vehicles/bus-32.jpg", import.meta.url).href,
 };
 
