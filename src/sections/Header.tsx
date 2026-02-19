@@ -119,7 +119,7 @@ export default function HeaderWithWhatsApp() {
     href={TEL}
     className="flex items-center gap-1
                text-[12px] font-semibold 
-               text-[#003a64] whitespace-nowrap"
+               text-[#003a64]"
   >
     <Phone size={12} className="text-[#0092fb]" />
     +91 +91 9 52 552 5552
@@ -129,7 +129,7 @@ export default function HeaderWithWhatsApp() {
     href={EMAIL}
     className="flex items-center gap-1 
                text-[12px] font-semibold 
-               text-[#003a64] truncate"
+               text-[#003a64]"
   >
     <Mail size={12} className="text-[#0092fb]" />
     {MAIL}
