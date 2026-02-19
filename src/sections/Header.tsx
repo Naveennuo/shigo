@@ -6,7 +6,7 @@ import { Phone, Mail, Menu, X, ArrowUp, MessageCircle } from "lucide-react";
 const logo = new URL("../assets/ShiGOlogo.svg", import.meta.url).href;
 const whatsappLogo = new URL("../assets/whatsapp.svg", import.meta.url).href;
 
-const nav = ["Destinations", "Our Advantages", "Bank Details", "Vechile Tariff", "Terms & Conditions"];
+const nav = ["Destinations", "Our Advantages", "Bank Details", "Terms & Conditions"];
 
 const PHONE = "+919525525552";
 const MAIL = "shigoelitetourism@gmail.com";
@@ -85,7 +85,7 @@ export default function HeaderWithWhatsApp() {
             <img src={logo} alt="ShiGO" className="h-9 md:h-10 lg:h-11 cursor-pointer" />
           </Link>
 
-          <nav className="hidden md:flex gap-4 md:gap-6 lg:gap-8 xl:gap-10 text-white text-sm md:text-base lg:text-lg font-medium">
+          <nav className="hidden md:flex gap-4 md:gap-6 lg:gap-8 xl:gap-10 text-white  font-medium">
             {nav.map((n) => (
               <span key={n} className="cursor-pointer hover:text-[#0092fb]">
                 {n}
@@ -93,12 +93,12 @@ export default function HeaderWithWhatsApp() {
             ))}
           </nav>
 
-          <div className="hidden md:flex items-center gap-3 md:gap-4 lg:gap-6 bg-white px-3 md:px-4 lg:px-6 py-2 rounded-full text-[#003a64] text-xs md:text-sm lg:text-base font-semibold">
-            <a href={TEL} className="flex items-center gap-2">
+          <div className="hidden md:flex items-center gap-4 bg-white px-3 md:px-4 lg:px-6 py-2 rounded-full text-[#003a64] text-xs md:text-sm lg:text-base font-semibold">
+            <a href={TEL} className="flex items-center gap-2 text-[16px]">
               <Phone size={16} className="text-[#0092fb]" />
-              +91 95255 25552
+              +91 9 52 552 5552
             </a>
-            <a href={EMAIL} className="flex items-center gap-2">
+            <a href={EMAIL} className="flex items-center gap-2 text-[16px]">
               <Mail size={16} className="text-[#0092fb]" />
               {MAIL}
             </a>
@@ -122,7 +122,7 @@ export default function HeaderWithWhatsApp() {
                text-[#003a64] whitespace-nowrap"
   >
     <Phone size={14} className="text-[#0092fb]" />
-    +91 95255 25552
+    +91 +91 9 52 552 5552
   </a>
 
   <a

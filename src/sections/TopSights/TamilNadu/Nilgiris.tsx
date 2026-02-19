@@ -59,7 +59,7 @@ const ToyTrain = new URL(
 ).href;
 
 const LambsRock = new URL(
-  "../../../assets/tamilnadu/nilgiris/lambs-rock.jpeg",
+  "../../../assets/tamilnadu/nilgiris/lambs-rock.jpg",
   import.meta.url
 ).href;
 
@@ -74,7 +74,7 @@ const UpperBhavani = new URL(
 ).href;
 
 const HorticultureGarden = new URL(
-  "../../../assets/tamilnadu/nilgiris/horticulture-garden.jpeg",
+  "../../../assets/tamilnadu/nilgiris/horticulture-garden.jpg",
   import.meta.url
 ).href;
 

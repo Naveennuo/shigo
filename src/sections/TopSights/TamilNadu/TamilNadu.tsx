@@ -27,10 +27,12 @@ const Madurai = new URL("../../../assets/tamilnadu/district/madurai.jpg", import
 const Rameshwaram = new URL("../../../assets/tamilnadu/district/rameshwaram.jpg", import.meta.url).href;
 const Vellore = new URL("../../../assets/tamilnadu/district/vellore.jpg", import.meta.url).href;
 const Tuticorin = new URL("../../../assets/tamilnadu/district/tuticorin.jpg", import.meta.url).href;
-
+const Kumbakonam = new URL("../../../assets/tamilnadu/district/kumbakonam.jpeg", import.meta.url).href;
+const Chidambaram = new URL("../../../assets/tamilnadu/district/chidambaram.jpg", import.meta.url).href;
+const Velankanni = new URL("../../../assets/tamilnadu/district/velankanni.jpg", import.meta.url).href;
 /* ================== DATA (WITH SLUG) ================== */
 const districts = [
-  { name: "The Nilgiris", slug: "nilgiris", img: Nilgiris },
+  { name: "Nilgiris (Ooty)", slug: "nilgiris", img: Nilgiris },
   { name: "Kanchipuram", slug: "kanchipuram", img: Kanchipuram },
   { name: "Coimbatore", slug: "coimbatore", img: Coimbatore },
   { name: "Chennai", slug: "chennai", img: Chennai },
@@ -48,6 +50,9 @@ const districts = [
   { name: "Rameshwaram", slug: "rameshwaram", img: Rameshwaram },
   { name: "Vellore", slug: "vellore", img: Vellore },
   { name: "Tuticorin", slug: "tuticorin", img: Tuticorin },
+  { name: "Kumbakonam", slug: "kumbakonam", img: Kumbakonam },
+  { name: "Chidambaram", slug: "chidambaram", img: Chidambaram },
+  { name: "Velankanni", slug: "velankanni", img: Velankanni },
 ];
 
 export default function TamilNadu() {

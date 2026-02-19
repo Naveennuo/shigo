@@ -29,7 +29,7 @@ const KailasanathaTemple = new URL(
 ).href;
 
 const UlagalandaPerumal = new URL(
-  "../../../assets/tamilnadu/kanchipuram/ulagalanda-perumal.jpg",
+  "../../../assets/tamilnadu/kanchipuram/ulagalanda-perumal.webp",
   import.meta.url
 ).href;
 

@@ -54,7 +54,7 @@ const KovaiKutralam = new URL(
 ).href;
 
 const Velliangiri = new URL(
-  "../../../assets/tamilnadu/coimbatore/velliangiri.webp",
+  "../../../assets/tamilnadu/coimbatore/velliangiri.jpg",
   import.meta.url
 ).href;
 

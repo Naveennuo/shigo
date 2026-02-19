@@ -22,6 +22,8 @@ import Nilgiris from "./sections/TopSights/TamilNadu/Nilgiris";
 import Kanchipuram from "./sections/TopSights/TamilNadu/Kanchipuram";
 import Coimbatore from "./sections/TopSights/TamilNadu/Coimbature";
 import Chennai from "./sections/TopSights/TamilNadu/Chennai";
+import Mahabalipuram from "./sections/TopSights/TamilNadu/Mahabalipuram";
+import Thanjavur from "./sections/TopSights/TamilNadu/Thanjavur";
 
 /* ---------- Home Page Layout ---------- */
 const Home = () => {
@@ -57,6 +59,8 @@ export default function App() {
           <Route path="/tamilnadu/kanchipuram" element={<Kanchipuram />} />
           <Route path="/tamilnadu/coimbatore" element={<Coimbatore />} />
           <Route path="/tamilnadu/chennai" element={<Chennai />} />
+          <Route path="/tamilnadu/mahabalipuram" element={<Mahabalipuram />} />
+          <Route path="/tamilnadu/thanjavur" element={<Thanjavur />} />
 
           {/* ✅ Other districts dynamic page */}
           <Route path="/tamilnadu/:districtSlug" element={<DistrictPage />} />

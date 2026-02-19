@@ -41,7 +41,7 @@ const vehicles: {
   { name: "Force Urbania", category: "Luxury Van", seats: "12+1", image: imgs.Urbania12 },  // 12
   { name: "Force Urbania", category: "Luxury Van", seats: "16+1", image: imgs.Urbania16 },  // 13
 
-  { name: "Coach", category: "AC", seats: "21+1", image: imgs.Coach },                       // 14
+  { name: "Mini Bus (Coach)", category: "AC", seats: "21+1", image: imgs.Coach },                       // 14
   { name: "Sleeper Bus", category: "AC", seats: "32+1", image: imgs.Bus },                  // 15
 ];
 
