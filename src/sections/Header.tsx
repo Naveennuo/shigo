@@ -117,21 +117,21 @@ export default function HeaderWithWhatsApp() {
 
   <a
     href={TEL}
-    className="flex items-center gap-2 
-               text-[13px] font-semibold 
+    className="flex items-center gap-1
+               text-[12px] font-semibold 
                text-[#003a64] whitespace-nowrap"
   >
-    <Phone size={14} className="text-[#0092fb]" />
+    <Phone size={12} className="text-[#0092fb]" />
     +91 +91 9 52 552 5552
   </a>
 
   <a
     href={EMAIL}
-    className="flex items-center gap-2 
-               text-[13px] font-semibold 
+    className="flex items-center gap-1 
+               text-[12px] font-semibold 
                text-[#003a64] truncate"
   >
-    <Mail size={14} className="text-[#0092fb]" />
+    <Mail size={12} className="text-[#0092fb]" />
     {MAIL}
   </a>
 
