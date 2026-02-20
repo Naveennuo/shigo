@@ -118,7 +118,7 @@ export default function HeaderWithWhatsApp() {
   <a
     href={TEL}
     className="flex items-center gap-1
-               text-[14px] font-semibold 
+               text-[13px] font-semibold 
                text-[#003a64]"
   >
     <Phone size={13} className="text-[#0092fb]" />
@@ -128,7 +128,7 @@ export default function HeaderWithWhatsApp() {
   <a
     href={EMAIL}
     className="flex items-center gap-1 
-               text-[14px] font-semibold 
+               text-[13px] font-semibold 
                text-[#003a64]"
   >
     <Mail size={13} className="text-[#0092fb]" />
