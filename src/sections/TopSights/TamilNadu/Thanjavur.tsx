@@ -34,7 +34,7 @@ const RajarajaChola = new URL(
 ).href;
 
 const ArtGallery = new URL(
-  "../../../assets/tamilnadu/thanjavur/art-gallery.jpg",
+  "../../../assets/tamilnadu/thanjavur/art-gallery.webp",
   import.meta.url
 ).href;
 

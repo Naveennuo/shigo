@@ -34,7 +34,7 @@ const Doddabetta = new URL(
 ).href;
 
 const BoatHouse = new URL(
-  "../../../assets/tamilnadu/nilgiris/boat-house.jpg",
+  "../../../assets/tamilnadu/nilgiris/boat-house.webp",
   import.meta.url
 ).href;
 

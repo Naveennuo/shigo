@@ -24,6 +24,9 @@ import Coimbatore from "./sections/TopSights/TamilNadu/Coimbature";
 import Chennai from "./sections/TopSights/TamilNadu/Chennai";
 import Mahabalipuram from "./sections/TopSights/TamilNadu/Mahabalipuram";
 import Thanjavur from "./sections/TopSights/TamilNadu/Thanjavur";
+import Kodaikanal from "./sections/TopSights/TamilNadu/Kodaikanal";
+import Trichy from "./sections/TopSights/TamilNadu/Trichy";
+
 
 /* ---------- Home Page Layout ---------- */
 const Home = () => {
@@ -61,6 +64,9 @@ export default function App() {
           <Route path="/tamilnadu/chennai" element={<Chennai />} />
           <Route path="/tamilnadu/mahabalipuram" element={<Mahabalipuram />} />
           <Route path="/tamilnadu/thanjavur" element={<Thanjavur />} />
+          <Route path="/tamilnadu/kodaikanal" element={<Kodaikanal />} />
+          <Route path="/tamilnadu/trichy" element={<Trichy />} />
+
 
           {/* ✅ Other districts dynamic page */}
           <Route path="/tamilnadu/:districtSlug" element={<DistrictPage />} />
