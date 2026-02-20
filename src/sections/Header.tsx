@@ -118,20 +118,20 @@ export default function HeaderWithWhatsApp() {
   <a
     href={TEL}
     className="flex items-center gap-1
-               text-[12px] font-semibold 
+               text-[14px] font-semibold 
                text-[#003a64]"
   >
-    <Phone size={12} className="text-[#0092fb]" />
-    +91 +91 9 52 552 5552
+    <Phone size={13} className="text-[#0092fb]" />
+    +91 9 52 552 5552
   </a>
 
   <a
     href={EMAIL}
     className="flex items-center gap-1 
-               text-[12px] font-semibold 
+               text-[14px] font-semibold 
                text-[#003a64]"
   >
-    <Mail size={12} className="text-[#0092fb]" />
+    <Mail size={13} className="text-[#0092fb]" />
     {MAIL}
   </a>
 
