@@ -16,16 +16,9 @@ import TicketBooking from "./sections/TicketBooking";
 import RatingReviews from "./sections/RatingReviews";
 
 /* Tamil Nadu Pages */
-import TamilNadu from "./sections/TopSights/TamilNadu/TamilNadu";
-import DistrictPage from "./sections/TopSights/TamilNadu/DistrictPage";
-import Nilgiris from "./sections/TopSights/TamilNadu/Nilgiris";
-import Kanchipuram from "./sections/TopSights/TamilNadu/Kanchipuram";
-import Coimbatore from "./sections/TopSights/TamilNadu/Coimbature";
-import Chennai from "./sections/TopSights/TamilNadu/Chennai";
-import Mahabalipuram from "./sections/TopSights/TamilNadu/Mahabalipuram";
-import Thanjavur from "./sections/TopSights/TamilNadu/Thanjavur";
-import Kodaikanal from "./sections/TopSights/TamilNadu/Kodaikanal";
-import Trichy from "./sections/TopSights/TamilNadu/Trichy";
+import TamilNaduList from "./pages/tamilnadu/TamilNaduList";
+import DistrictPage from "./pages/tamilnadu/DistrictPage";
+
 
 
 /* ---------- Home Page Layout ---------- */
@@ -55,21 +48,8 @@ export default function App() {
           <Route path="/" element={<Home />} />
 
           {/* Tamil Nadu Main */}
-          <Route path="/tamilnadu" element={<TamilNadu />} />
-
-          {/* ✅ Nilgiris dedicated page */}
-          <Route path="/tamilnadu/nilgiris" element={<Nilgiris />} />
-          <Route path="/tamilnadu/kanchipuram" element={<Kanchipuram />} />
-          <Route path="/tamilnadu/coimbatore" element={<Coimbatore />} />
-          <Route path="/tamilnadu/chennai" element={<Chennai />} />
-          <Route path="/tamilnadu/mahabalipuram" element={<Mahabalipuram />} />
-          <Route path="/tamilnadu/thanjavur" element={<Thanjavur />} />
-          <Route path="/tamilnadu/kodaikanal" element={<Kodaikanal />} />
-          <Route path="/tamilnadu/trichy" element={<Trichy />} />
-
-
-          {/* ✅ Other districts dynamic page */}
-          <Route path="/tamilnadu/:districtSlug" element={<DistrictPage />} />
+        <Route path="/tamilnadu" element={<TamilNaduList />} />
+        <Route path="/tamilnadu/:districtSlug" element={<DistrictPage />} />
         </Routes>
 
         <Footer />

@@ -1,36 +1,33 @@
-/* ===========================
-   ✅ TamilNadu.tsx (FULL)
-   - Uses slug so Nilgiris routes to /tamilnadu/nilgiris
-   =========================== */
 import React from "react";
 import { Link } from "react-router-dom";
 
 /* ================== BANNER ================== */
-const Banner = new URL("../../../assets/Tamilnadu.jpg", import.meta.url).href;
+const Banner = new URL("../../assets/Tamilnadu.jpg", import.meta.url).href;
 
 /* ================== DISTRICT IMAGES ================== */
-const Nilgiris = new URL("../../../assets/tamilnadu/district/nilgiris.jpg", import.meta.url).href;
-const Kanchipuram = new URL("../../../assets/tamilnadu/district/kanchipuram.jpg", import.meta.url).href;
-const Coimbatore = new URL("../../../assets/tamilnadu/district/coimbatore.jpg", import.meta.url).href;
-const Chennai = new URL("../../../assets/tamilnadu/district/chennai.jpg", import.meta.url).href;
-const Mahabalipuram = new URL("../../../assets/tamilnadu/district/mahabalipuram.jpg", import.meta.url).href;
-const Thanjavur = new URL("../../../assets/tamilnadu/district/thanjavur.jpg", import.meta.url).href;
-const Kodaikanal = new URL("../../../assets/tamilnadu/district/kodaikanal.jpg", import.meta.url).href;
-const Trichy = new URL("../../../assets/tamilnadu/district/trichy.jpg", import.meta.url).href;
-const Thiruvannamalai = new URL("../../../assets/tamilnadu/district/thiruvannamalai.jpg", import.meta.url).href;
-const Tenkasi = new URL("../../../assets/tamilnadu/district/tenkasi.jpg", import.meta.url).href;
-const Theni = new URL("../../../assets/tamilnadu/district/theni.jpg", import.meta.url).href;
-const Kanyakumari = new URL("../../../assets/tamilnadu/district/kanyakumari.jpg", import.meta.url).href;
-const Namakkal = new URL("../../../assets/tamilnadu/district/namakkal.jpg", import.meta.url).href;
-const Salem = new URL("../../../assets/tamilnadu/district/salem.jpg", import.meta.url).href;
-const Madurai = new URL("../../../assets/tamilnadu/district/madurai.jpg", import.meta.url).href;
-const Rameshwaram = new URL("../../../assets/tamilnadu/district/rameshwaram.jpg", import.meta.url).href;
-const Vellore = new URL("../../../assets/tamilnadu/district/vellore.jpg", import.meta.url).href;
-const Tuticorin = new URL("../../../assets/tamilnadu/district/tuticorin.jpg", import.meta.url).href;
-const Kumbakonam = new URL("../../../assets/tamilnadu/district/kumbakonam.jpeg", import.meta.url).href;
-const Chidambaram = new URL("../../../assets/tamilnadu/district/chidambaram.jpg", import.meta.url).href;
-const Velankanni = new URL("../../../assets/tamilnadu/district/velankanni.jpg", import.meta.url).href;
-/* ================== DATA (WITH SLUG) ================== */
+const Nilgiris = new URL("../../assets/tamilnadu/district/nilgiris.jpg", import.meta.url).href;
+const Kanchipuram = new URL("../../assets/tamilnadu/district/kanchipuram.jpg", import.meta.url).href;
+const Coimbatore = new URL("../../assets/tamilnadu/district/coimbatore.jpg", import.meta.url).href;
+const Chennai = new URL("../../assets/tamilnadu/district/chennai.jpg", import.meta.url).href;
+const Mahabalipuram = new URL("../../assets/tamilnadu/district/mahabalipuram.jpg", import.meta.url).href;
+const Thanjavur = new URL("../../assets/tamilnadu/district/thanjavur.jpg", import.meta.url).href;
+const Kodaikanal = new URL("../../assets/tamilnadu/district/kodaikanal.jpg", import.meta.url).href;
+const Trichy = new URL("../../assets/tamilnadu/district/trichy.jpg", import.meta.url).href;
+const Thiruvannamalai = new URL("../../assets/tamilnadu/district/thiruvannamalai.jpg", import.meta.url).href;
+const Courtallam = new URL("../../assets/tamilnadu/district/courtallam.jpg", import.meta.url).href;
+const Theni = new URL("../../assets/tamilnadu/district/theni.jpg", import.meta.url).href;
+const Kanyakumari = new URL("../../assets/tamilnadu/district/kanyakumari.jpg", import.meta.url).href;
+const Namakkal = new URL("../../assets/tamilnadu/district/namakkal.jpg", import.meta.url).href;
+const Salem = new URL("../../assets/tamilnadu/district/salem.jpg", import.meta.url).href;
+const Madurai = new URL("../../assets/tamilnadu/district/madurai.jpg", import.meta.url).href;
+const Rameshwaram = new URL("../../assets/tamilnadu/district/rameshwaram.webp", import.meta.url).href;
+const Vellore = new URL("../../assets/tamilnadu/district/vellore.jpg", import.meta.url).href;
+const Tuticorin = new URL("../../assets/tamilnadu/district/tuticorin.jpg", import.meta.url).href;
+const Kumbakonam = new URL("../../assets/tamilnadu/district/kumbakonam.jpeg", import.meta.url).href;
+const Chidambaram = new URL("../../assets/tamilnadu/district/chidambaram.jpg", import.meta.url).href;
+const Velankanni = new URL("../../assets/tamilnadu/district/velankanni.jpg", import.meta.url).href;
+
+/* ================== DATA ================== */
 const districts = [
   { name: "Nilgiris (Ooty)", slug: "nilgiris", img: Nilgiris },
   { name: "Kanchipuram", slug: "kanchipuram", img: Kanchipuram },
@@ -41,7 +38,7 @@ const districts = [
   { name: "Kodaikanal", slug: "kodaikanal", img: Kodaikanal },
   { name: "Trichy", slug: "trichy", img: Trichy },
   { name: "Thiruvannamalai", slug: "thiruvannamalai", img: Thiruvannamalai },
-  { name: "Tenkasi", slug: "tenkasi", img: Tenkasi },
+  { name: "Courtallam", slug: "courtallam", img: Courtallam },
   { name: "Theni", slug: "theni", img: Theni },
   { name: "Kanyakumari", slug: "kanyakumari", img: Kanyakumari },
   { name: "Namakkal", slug: "namakkal", img: Namakkal },
@@ -65,7 +62,6 @@ export default function TamilNadu() {
           alt="Tamil Nadu"
           className="absolute inset-0 w-full h-full object-cover"
         />
-
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent" />
 
         <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-6">
@@ -79,14 +75,15 @@ export default function TamilNadu() {
       {/* ================== DISTRICT GRID ================== */}
       <div className="max-w-[1200px] mx-auto px-6 py-20">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-          {districts.map((district, index) => (
-            <Link key={index} to={`/tamilnadu/${district.slug}`} className="group">
+          {districts.map((district) => (
+            <Link key={district.slug} to={`/tamilnadu/${district.slug}`} className="group">
               <div className="rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition duration-500 bg-white">
                 <div className="h-[240px] overflow-hidden">
                   <img
                     src={district.img}
                     alt={district.name}
                     className="w-full h-full object-cover group-hover:scale-110 transition duration-700"
+                    loading="lazy"
                   />
                 </div>
 
