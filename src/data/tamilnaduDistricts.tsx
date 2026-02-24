@@ -18,7 +18,7 @@ export const DISTRICTS: Record<string, District> = {
       { name: "Nilgiris tea Gardens", img: p("nilgiris", "tea-gardens.png") },
       { name: "Botanical garden", img: p("nilgiris", "botanical-garden.jpg") },
       { name: "Doddabetta peak", img: p("nilgiris", "doddabetta.jpg") },
-      { name: "Boat House", img: p("nilgiris", "boat-house.webp") },
+      { name: "Boat House", img: p("nilgiris", "boat-house.jpg") },
       { name: "Avalanche lake", img: p("nilgiris", "avalanche-lake.jpg") },
       { name: "Rose garden", img: p("nilgiris", "rose-garden.jpg") },
       { name: "Kodanad view point", img: p("nilgiris", "kodanad-view.jpg") },
@@ -193,18 +193,44 @@ export const DISTRICTS: Record<string, District> = {
     ],
   },
 
-  theni: {
-    title: "Theni",
-    banner: b("theni.jpg"),
+  theniandcumbum: {
+    title: "Theni & Cumbum",
+    banner: b("theniandcumbum.jpg"),
     sights: [
-      { name: "Vaigai Dam", img: p("theni", "vaigai-dam.jpg") },
-      { name: "Kumbakarai Falls", img: p("theni", "kumbakarai-falls.jpg") },
-      { name: "Suruli Falls", img: p("theni", "suruli-falls.jpg") },
-      { name: "Veerapandi Temple", img: p("theni", "veerapandi-temple.webp") },
-      { name: "Saneeswaran Temple", img: p("theni", "saneeswaran-temple.jpg") },
-      { name: "Dharmashastha Temple", img: p("theni", "dharmashastha-temple.webp") },
-      { name: "Kurangani Falls", img: p("theni", "kurangani-falls.webp") },
-      { name: "Shothupara Dam", img: p("theni", "shothupara-dam.jpg") },
+      { name: "Vaigai Dam", img: p("theniandcumbum", "vaigai-dam.jpg") },
+      { name: "Kumbakarai Falls", img: p("theniandcumbum", "kumbakarai-falls.jpg") },
+      { name: "Suruli Falls", img: p("theniandcumbum", "suruli-falls.jpg") },
+      { name: "Veerapandi Temple", img: p("theniandcumbum", "veerapandi-temple.webp") },
+      { name: "Saneeswaran Temple", img: p("theniandcumbum", "saneeswaran-temple.jpg") },
+      { name: "Dharmashastha Temple", img: p("theniandcumbum", "dharmashastha-temple.webp") },
+      { name: "Kurangani Falls", img: p("theniandcumbum", "kurangani-falls.webp") },
+      { name: "Shothupara Dam", img: p("theniandcumbum", "shothupara-dam.jpg") },
     ],
   },
+  
+  kanyakumari: {
+  title: "Kanyakumari",
+  banner: b("kanyakumari.jpg"),
+  sights: [
+    { name: "Vivekananda Rock Memorial", img: p("kanyakumari", "vivekananda-rock-memorial.jpg") },
+    { name: "Thiruvalluvar Statue", img: p("kanyakumari", "thiruvalluvar-statue.jpg") },
+    { name: "Bhagavathi Amman Temple", img: p("kanyakumari", "bhagavathi-amman-temple.jpg") },
+    { name: "Sunrise Point", img: p("kanyakumari", "sunrise-point.jpg") },
+    { name: "Sunset Point", img: p("kanyakumari", "sunset-point.jpg") },
+    { name: "Suchindram Temple", img: p("kanyakumari", "suchindram-temple.jpg") },
+    { name: "Our Lady of Ransom Church", img: p("kanyakumari", "our-lady-of-ransom-church.jpg") },
+    { name: "Gandhi Mandapam", img: p("kanyakumari", "gandhi-mandapam.jpg") },
+    { name: "Kanyakumari Beach", img: p("kanyakumari", "kanyakumari-beach.jpg") },
+    { name: "Vattakottai Fort", img: p("kanyakumari", "vattakottai-fort.jpg") },
+    { name: "Padmanabhapuram Palace", img: p("kanyakumari", "padmanabhapuram-palace.jpg") },
+    { name: "Tirupati Balaji Temple", img: p("kanyakumari", "tirupati-balaji-temple.webp") },
+    { name: "Triveni Sangamam", img: p("kanyakumari", "triveni-sangamam.webp") },
+    { name: "Wax Museum", img: p("kanyakumari", "wax-museum.jpg") },
+    { name: "Musical Fountains", img: p("kanyakumari", "musical-fountains.jpg") },
+  ],
+},
+
+
+
 };
+

@@ -15,11 +15,12 @@ const Kodaikanal = new URL("../../assets/tamilnadu/district/kodaikanal.jpg", imp
 const Trichy = new URL("../../assets/tamilnadu/district/trichy.jpg", import.meta.url).href;
 const Thiruvannamalai = new URL("../../assets/tamilnadu/district/thiruvannamalai.jpg", import.meta.url).href;
 const Courtallam = new URL("../../assets/tamilnadu/district/courtallam.jpg", import.meta.url).href;
-const Theni = new URL("../../assets/tamilnadu/district/theni.jpg", import.meta.url).href;
+const TheniandCumbum = new URL("../../assets/tamilnadu/district/theniandcumbum.jpg", import.meta.url).href;
 const Kanyakumari = new URL("../../assets/tamilnadu/district/kanyakumari.jpg", import.meta.url).href;
 const Namakkal = new URL("../../assets/tamilnadu/district/namakkal.jpg", import.meta.url).href;
 const Salem = new URL("../../assets/tamilnadu/district/salem.jpg", import.meta.url).href;
 const Madurai = new URL("../../assets/tamilnadu/district/madurai.jpg", import.meta.url).href;
+const Megamalai = new URL("../../assets/tamilnadu/district/megamalai.jpg", import.meta.url).href;
 const Rameshwaram = new URL("../../assets/tamilnadu/district/rameshwaram.webp", import.meta.url).href;
 const Vellore = new URL("../../assets/tamilnadu/district/vellore.jpg", import.meta.url).href;
 const Tuticorin = new URL("../../assets/tamilnadu/district/tuticorin.jpg", import.meta.url).href;
@@ -39,11 +40,12 @@ const districts = [
   { name: "Trichy", slug: "trichy", img: Trichy },
   { name: "Thiruvannamalai", slug: "thiruvannamalai", img: Thiruvannamalai },
   { name: "Courtallam", slug: "courtallam", img: Courtallam },
-  { name: "Theni", slug: "theni", img: Theni },
+  { name: "Theni & Cumbum", slug: "theniandcumbum", img: TheniandCumbum },
   { name: "Kanyakumari", slug: "kanyakumari", img: Kanyakumari },
   { name: "Namakkal", slug: "namakkal", img: Namakkal },
   { name: "Salem", slug: "salem", img: Salem },
   { name: "Madurai", slug: "madurai", img: Madurai },
+  { name: "Megamalai", slug: "megamalai", img: Megamalai },
   { name: "Rameshwaram", slug: "rameshwaram", img: Rameshwaram },
   { name: "Vellore", slug: "vellore", img: Vellore },
   { name: "Tuticorin", slug: "tuticorin", img: Tuticorin },
