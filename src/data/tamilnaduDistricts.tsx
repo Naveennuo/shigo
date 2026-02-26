@@ -35,6 +35,7 @@ export const DISTRICTS: Record<string, District> = {
       { name: "Masinagudi Jeep Safari", img: p("nilgiris", "masinagudi-jeep-safari.jpg") },
       { name: "Theppakadu Elephant Camp", img: p("nilgiris", "theppakadu.webp") },
       { name: "Bandipur Jeep Safari", img: p("nilgiris", "bandipur-jeep-safari.jpg") },
+      { name: "Kattery Park", img: p("nilgiris", "kattery-park.jpg") },
     ],
   },
 
